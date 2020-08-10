@@ -26,8 +26,4 @@ def min_coins (n, index):
     else:
         quotient += min(remainder, index-1)
 
-<<<<<<< HEAD
     return quotient
-=======
-    return quotient
->>>>>>> de57c67f195a4d4de21626574ab8533313d9a833
