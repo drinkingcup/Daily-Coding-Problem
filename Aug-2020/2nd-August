@@ -6,3 +6,24 @@ You can use standard American denominations, that is, 1¢, 5¢, 10¢, and 25¢.
 For example, given n = 16, return 3 since we can make it with a 10¢, a 5¢, and a 1¢.
 
 Suggested solution:
+
+Simply divide n by the largest denomination to get the quotient. If the reminder is not 0, 
+then continue to divide by the next smaller denomination (as compared to previous step) to 
+get the second quotient. Continue to do this till the reminder is 0. Then all up all the
+quotients.
+
+
+index = 3
+
+def min_coins (n, index):
+    denomination_list = [1, 5, 10, 25]
+    
+    quotient = n / denomination_list[index]
+    remainder = n % denomination_list[index]
+
+    if remainder == 0:
+        return quotient
+    else:
+        quotient += min(remainder, index-1)
+
+    return quotient
