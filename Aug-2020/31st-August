@@ -9,6 +9,23 @@ Hint: Make sure each one of the 52! permutations of the deck is equally likely.
 
 Answer:
 The problem is quite ambiguous for me so I am going to code based on the following assumptions:
-(a) the random numbers between 1 and k refer to the number of shuffles on the deck of cards
-(b) using the basic overhand shuffling method.
+(a) k = 52 so as to make sure each of the 52! permutations is equally likely.
+(b) Since I am using a list that start with index = 0, the last card would have index = 51
 
+
+from random import randint
+
+def get_random_card():
+    return randint(0, 51)   # include both 0 and 51
+
+def shuffle_card_deck():
+    deck = [x for x in range(52)]      # initialise a deck of 52 cards from 0 to 51
+
+    for card in deck:
+        swap_card = deck[get_random_card()]
+        deck[card], deck[swap_card] = deck[swap_card],deck[card]
+
+    print("After shuffing, the cards look like this : ", deck)
+
+if __name__ == "__main__":
+    shuffle_card_deck()
