@@ -8,3 +8,7 @@ It should run in O(N) time.
 Hint: Make sure each one of the 52! permutations of the deck is equally likely.
 
 Answer:
+The problem is quite ambiguous for me so I am going to code based on the following assumptions:
+(a) the random numbers between 1 and k refer to the number of shuffles on the deck of cards
+(b) using the basic overhand shuffling method.
+
