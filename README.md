@@ -1,7 +1,7 @@
 # Daily-Coding-Problem
 These solutions are my personal suggestions. If there are ways to make it better/ optimal, do feel free to contact me @ shindosan@gmail.com
 
-___________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________
 
 Problem 1:
 Good morning! Here's your coding interview problem for today.
@@ -12,7 +12,7 @@ Write an algorithm that computes the reversal of a directed graph.
 For example, if a graph consists of A -> B -> C, it should become A <- B <- C.
 
 <a href="/Solutions/problem_1.txt">Solution</a>
-___________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________
 
 Problem 2:
 Good morning! Here's your coding interview problem for today.
@@ -28,6 +28,7 @@ For example, given n = 16, return 3 since we can make it with a 10¢, a 5¢, and
 <a href="/Solutions/problem_2.py">Solution</a>
 _________________________________________________________________________________________________________________________________________________________________________________
 
+Problem 3:
 Good morning! Here's your coding interview problem for today.
 
 This problem was asked by Google.
@@ -43,4 +44,15 @@ You may augment the node to add parent pointers or any other property you would 
 
 <a href="/Solutions/problem_3.py">Solution</a>
 _________________________________________________________________________________________________________________________________________________________________________________
+
+Problem 4:
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by Google.
+
+You are given an array of length n + 1 whose elements belong to the set {1, 2, ..., n}. By the pigeonhole principle, there must be a duplicate. Find it in linear time and space.
+
+<a href="/Solutions/problem_4.py">Solution</a>
+_________________________________________________________________________________________________________________________________________________________________________________
+
 
