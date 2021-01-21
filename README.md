@@ -75,16 +75,9 @@ ________________________________________________________________________________
 Problem 6:
 Good morning! Here's your coding interview problem for today.
 
-This problem was asked by Dropbox.
+This problem was asked by Google.
 
-What does the below code snippet print out? How can we fix the anonymous functions to behave as we'd expect?
-
-functions = []
-for i in range(10):
-    functions.append(lambda : i)
-
-for f in functions:
-    print(f())
+Implement a file syncing algorithm for two computers over a low-bandwidth network. What if we know the files in the two computers are mostly the same?
 
 <a href="/Solutions/problem_6.py">Solution</a>
 _________________________________________________________________________________________________________________________________________________________________________________
