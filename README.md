@@ -84,3 +84,63 @@ Implement a file syncing algorithm for two computers over a low-bandwidth networ
 
 <a href="/Solutions/problem_6.txt">Solution</a>
 _________________________________________________________________________________________________________________________________________________________________________________
+
+Problem 7:
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by Microsoft.
+
+Given a number in the form of a list of digits, return all possible permutations.
+
+For example, given [1,2,3], return [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]].
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+Problem 8:
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by Microsoft.
+
+Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list. If there is more than one possible reconstruction, return any of them. If there is no possible reconstruction, then return null.
+
+For example, given the set of words 'quick', 'brown', 'the', 'fox', and the string "thequickbrownfox", you should return ['the', 'quick', 'brown', 'fox'].
+
+Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+Problem 9:
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by Jane Street.
+
+Given an arithmetic expression in Reverse Polish Notation, write a program to evaluate it.
+
+The expression is given as a list of numbers and operands. For example: [5, 3, '+'] should return 5 + 3 = 8.
+
+For example, [15, 7, 1, 1, '+', '-', '/', 3, '*', 2, 1, 1, '+', '+', '-'] should return 5, since it is equivalent to ((15 / (7 - (1 + 1))) * 3) - (2 + (1 + 1)) = 5.
+
+You can assume the given expression is always valid.
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+Problem 10:
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by Google.
+
+Given a binary search tree and a range [a, b] (inclusive), return the sum of the elements of the binary search tree within the range.
+
+For example, given the following tree:
+
+    5
+   / \
+  3   8
+ / \ / \
+2  4 6  10
+and the range [4, 9], return 23 (5 + 4 + 6 + 8).
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+
+
