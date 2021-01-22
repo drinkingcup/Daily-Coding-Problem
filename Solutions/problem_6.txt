@@ -1,0 +1,22 @@
+Answer:
+
+For file syncing between 2 computers over low bandwidth, hashes will be required.
+Step 1: Perform hashing on all individual files such that each file has a hash value.
+Step 2: Then perform hashing on the folder that contain these files.
+Step 3: Perform hashing on the next higher level folder that contain the folder in step 2.
+Step 4: Repeat step 3 until the root folder is obtained.
+    
+Let's consider the following example below:
+
+Computer A
+C:\ -> Windows\ -> System32\ -> drivers\ -> etc -> (1)hosts (2)services
+
+If the hosts files changes (services files remain the same), the hash value of hosts_file will change.
+Accordingly, the hash value of etc folder which contain the 2 files will change as well.
+This changes will continue upwards till the hash value of C drive changes as well.
+    
+Computer B
+When computer B performs a file sync operation, it realises that the hash value of C drive has changed.
+It drills down to the lower level folder(Windows folder) and finds that the hash value of has changed as well.
+It then continues till it reaches the 2 files inside the etc folder.
+When it detects that the hash value of the hosts file has changed, it will copy that file from Computer A for replacement.
